@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.MainFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="root" prefHeight="255.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <Label layoutX="82.0" layoutY="40.0" text="Cryptography Demo">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="68.0" layoutY="128.0" onAction="#btnEncryption_OnAction" prefHeight="75.0" prefWidth="141.0" text="Encryption">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="302.0" layoutY="128.0" onAction="#btnDecryption_OnAction" prefHeight="75.0" prefWidth="141.0" text="Decryption">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
 </AnchorPane>
