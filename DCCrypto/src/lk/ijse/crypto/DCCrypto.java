@@ -47,6 +47,6 @@ public class DCCrypto {
         DCCrypto.encrypt("abcde", "123");// for odd lengths
         System.out.println("-------------------");
         DCCrypto.encrypt("abcde", "1234");// for even lengths
-        //DCCrypto.getTotal("1234");
+        System.out.println(getUniqueKeyValue("12345"));
     }
 }
