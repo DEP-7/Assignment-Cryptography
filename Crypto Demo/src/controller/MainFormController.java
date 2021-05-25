@@ -23,10 +23,10 @@ public class MainFormController {
 
     private void loadForm(String formName) throws IOException {
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(this.getClass().getResource("../view/"+formName+"Form.fxml"));
+        Parent root = FXMLLoader.load(this.getClass().getResource("../view/" + formName + "Form.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle(formName+" Window");
+        stage.setTitle(formName + " Window");
         stage.centerOnScreen();
         stage.initOwner(this.root.getScene().getWindow());
         stage.initModality(Modality.WINDOW_MODAL);
