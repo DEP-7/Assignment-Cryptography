@@ -14,12 +14,12 @@ public class EncryptionFormController {
         String text=txtText.getText().trim();
         String key=txtKey.getText().trim();
         if (text.isEmpty()) {
-            new Alert(Alert.AlertType.ERROR, "Please enter valid text");
+            new Alert(Alert.AlertType.ERROR, "Please enter valid text").show();
             txtText.requestFocus();
             return;
         }
         if (key.isEmpty()) {
-            new Alert(Alert.AlertType.ERROR, "Please enter valid key");
+            new Alert(Alert.AlertType.ERROR, "Please enter valid key").show();
             txtKey.requestFocus();
             return;
         }

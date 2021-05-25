@@ -14,12 +14,12 @@ public class DecryptionFormController {
         String cipherText=txtCipherText.getText().trim();
         String key=txtKey.getText().trim();
         if (cipherText.isEmpty()) {
-            new Alert(Alert.AlertType.ERROR, "Please enter valid cipherText");
+            new Alert(Alert.AlertType.ERROR, "Please enter valid cipherText").show();
             txtCipherText.requestFocus();
             return;
         }
         if (key.isEmpty()) {
-            new Alert(Alert.AlertType.ERROR, "Please enter valid key");
+            new Alert(Alert.AlertType.ERROR, "Please enter valid key").show();
             txtKey.requestFocus();
             return;
         }
