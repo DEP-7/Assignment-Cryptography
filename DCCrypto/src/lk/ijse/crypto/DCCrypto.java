@@ -7,7 +7,7 @@ public class DCCrypto {
         for (int i = plainText.length() - 1; i >= 0; i--) {
             reversedText += plainText.charAt(i);
         }
-        System.out.println(reversedText);
+        //System.out.println(reversedText);
 
         String softShuffledText = "";
         for (int i = 0; i < reversedText.length(); i += 2) {
@@ -16,7 +16,7 @@ public class DCCrypto {
             }
             softShuffledText += reversedText.charAt(i);
         }
-        System.out.println(softShuffledText);
+        //System.out.println(softShuffledText);
 
         int uniqueKeyValue = getUniqueKeyValue(key);
         //System.out.println(uniqueKeyValue);
@@ -27,7 +27,7 @@ public class DCCrypto {
             char newChar = (char) code;
             cipherText += newChar;
         }
-        System.out.println(cipherText);
+        //System.out.println(cipherText);
 
         return cipherText;
     }
@@ -41,7 +41,7 @@ public class DCCrypto {
             char oldChar = (char) code;
             softShuffledText += oldChar;
         }
-        System.out.println(softShuffledText);
+        //System.out.println(softShuffledText);
 
         String reversedText = "";
         for (int i = 0; i < softShuffledText.length(); i += 2) {
@@ -50,15 +50,15 @@ public class DCCrypto {
             }
             reversedText += softShuffledText.charAt(i);
         }
-        System.out.println(reversedText);
+        //System.out.println(reversedText);
 
         String plainText = "";
         for (int i = reversedText.length() - 1; i >= 0; i--) {
             plainText += reversedText.charAt(i);
         }
-        System.out.println(plainText.substring(0, plainText.length() - key.length()));
+        //System.out.println(plainText.substring(0, plainText.length() - key.length()));
 
-        return plainText;
+        return plainText.substring(0, plainText.length() - key.length());
     }
 
     private static int getUniqueKeyValue(String plainText) {
@@ -71,7 +71,7 @@ public class DCCrypto {
         return keyValue;
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         DCCrypto.encrypt("abcde", "123");// for odd lengths
         System.out.println("-------------------");
         DCCrypto.encrypt("abcde", "1234");// for even lengths
@@ -79,5 +79,5 @@ public class DCCrypto {
         DCCrypto.decrypt("ŠšƓşƑƒƏƐ", "321");// for odd lengths
         System.out.println("-------------------");
         DCCrypto.decrypt("ȱȲȯȰɢɣɠɡɟ", "1234");// for odd lengths
-    }
+    }*/
 }

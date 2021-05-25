@@ -18,16 +18,16 @@
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <JFXButton layoutX="57.0" layoutY="245.0" onAction="#btnEncrypt_OnAction" prefHeight="58.0" prefWidth="254.0" text="Encrypt">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </JFXButton>
       <JFXTextField fx:id="txtKey" layoutX="32.0" layoutY="181.0" prefHeight="39.0" prefWidth="314.0" promptText="Enter your Key">
          <font>
             <Font size="14.0" />
          </font>
       </JFXTextField>
+      <JFXButton layoutX="57.0" layoutY="245.0" onAction="#btnEncrypt_OnAction" prefHeight="58.0" prefWidth="254.0" text="Encrypt">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
       <JFXTextField fx:id="txtOutput" alignment="CENTER" editable="false" layoutX="32.0" layoutY="325.0" prefHeight="39.0" prefWidth="314.0" promptText="Cipher text will be displayed here">
          <font>
             <Font size="14.0" />
